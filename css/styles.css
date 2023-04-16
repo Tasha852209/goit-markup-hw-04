@@ -276,6 +276,7 @@ body {
   flex-basis: calc((100%-24 * 3) / 4);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .card-img {
   margin-bottom: 32px;
@@ -283,9 +284,6 @@ body {
 .card-info {
   padding: 32px 0px;
   text-align: center;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
 }
 .card-caption {
   font-weight: 500;
@@ -327,7 +325,7 @@ body {
   justify-content: center;
 }
 .customers-section {
-  padding: 120px 156px;
+  padding: 120px 0px;
 }
 .customers-title {
   font-weight: 700;
@@ -362,6 +360,10 @@ body {
   height: 56px;
   fill: currentColor;
 }
+.customers-logo:hover,
+.customers-logo:focus {
+  fill: var(--color-pressed-state);
+}
 .footer {
   background-color: var(--color-dark);
   padding-top: 100px;
@@ -386,10 +388,10 @@ body {
 .footer-list {
   gap: 16px;
 }
-.social-media-footer {
-  margin-left: 120px;
+.footer-info {
+  margin-right: 120px;
 }
-.social-media-footer-title {
+.social-media-footer-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -399,6 +401,7 @@ body {
 }
 .footer-sections {
   display: flex;
+  align-items: baseline;
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
@@ -437,6 +440,8 @@ body {
   background-color: var(--color-pressed-state);
   color: var(--color-white-background);
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-cards {
   display: flex;
@@ -447,14 +452,21 @@ body {
 /* .portfolio-item {
 } */
 .link-card {
+  display: block;
+
   background-color: var(--color-white-background);
   flex-basis: calc((100%-24px * 2) / 3);
 }
-.portfolio-info-card:hover,
+.link-card:hover,
+.link-card:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+/* .portfolio-info-card:hover,
 .portfolio-info-card:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+} */
 .portfolio-info-card {
   border: 1px solid var(--color-accent);
   padding: 32px 16px;
