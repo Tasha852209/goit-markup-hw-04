@@ -350,16 +350,17 @@ body {
 .customers-link:hover,
 .customers-link:focus {
   border: 1px solid var(--color-pressed-state);
+  color: var(--color-pressed-state);
 }
 .customers-logo {
   width: 104px;
   height: 56px;
   fill: currentColor;
 }
-.customers-logo:hover,
+/* .customers-logo:hover,
 .customers-logo:focus {
   fill: var(--color-pressed-state);
-}
+} */
 .footer {
   background-color: var(--color-dark);
   padding-top: 100px;
@@ -384,9 +385,6 @@ body {
 .footer-list {
   gap: 16px;
 }
-.footer-info {
-  margin-right: 120px;
-}
 .social-media-footer-text {
   font-weight: 500;
   font-size: 16px;
@@ -398,6 +396,7 @@ body {
 .footer-sections {
   display: flex;
   align-items: baseline;
+  gap: 120px;
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
