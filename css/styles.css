@@ -129,6 +129,12 @@ body {
 }
 .hero-section {
   background-color: var(--color-hero-background);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/hero/people-office.jpg");
+  background-size: cover;
   padding-top: 188px;
   padding-bottom: 188px;
 }
