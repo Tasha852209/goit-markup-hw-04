@@ -42,7 +42,7 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 2px solid red; */
+  outline: 2px solid red;
   outline-offset: -2px;
 }
 .visually-hidden {
@@ -203,6 +203,20 @@ body {
   letter-spacing: 0.02em;
   color: var(--color-text);
 }
+.feature-icon {
+  width: 64px;
+  height: 64px;
+}
+.icon-item {
+  display: flex;
+  background-color: var(--color-light);
+  justify-content: center;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
 .products-section {
   padding-bottom: 120px;
 }
@@ -280,6 +294,65 @@ body {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--color-text);
+  margin-bottom: 8px;
+}
+.social-list-icon {
+  width: 16px;
+  height: 16px;
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-primary-brand);
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--color-pressed-state);
+}
+.social-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+.customers-section {
+  padding: 120px 156px;
+}
+.customers-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--color-dark);
+  text-align: center;
+  margin-bottom: 72px;
+}
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-subtle);
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 168px;
+  height: 88px;
+  fill: var(--color-subtle);
+}
+.customers-link:hover,
+.customers-link:focus {
+  fill: var(--color-pressed-state);
+  border: 1px solid var(--color-pressed-state);
+}
+.customers-logo {
+  width: 104px;
+  height: 56px;
 }
 .footer {
   background-color: var(--color-dark);
@@ -342,8 +415,8 @@ body {
   row-gap: 48px;
   flex-wrap: wrap;
 }
-.portfolio-item {
-}
+/* .portfolio-item {
+} */
 .link-card {
   background-color: var(--color-white-background);
   flex-basis: calc((100%-24px * 2) / 3);
