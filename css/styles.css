@@ -357,10 +357,6 @@ body {
   height: 56px;
   fill: currentColor;
 }
-/* .customers-logo:hover,
-.customers-logo:focus {
-  fill: var(--color-pressed-state);
-} */
 .footer {
   background-color: var(--color-dark);
   padding-top: 100px;
