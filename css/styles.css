@@ -383,8 +383,8 @@ body {
   color: var(--color-pressed-state);
 }
 .customers-logo {
-  width: 104px;
-  height: 56px;
+  /* width: 104px;
+  height: 56px; */
   fill: currentColor;
 }
 /**
